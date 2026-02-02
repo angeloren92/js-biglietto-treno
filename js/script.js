@@ -43,15 +43,21 @@ let discount = 1;
 let final_price;
 // set constat values
 const unit_price = 0.21 ;
-// set discount depending by the age of the customer
-// less than 18 20%
-if (age < 18) {
-    discount = 0.8;
-// 65 or more 40%
-} else if (age >= 65) {
-    discount = 0.6;
+// check if the input are numbers and not string
+if (!isNaN(age && distance)) {
+    // set discount depending by the age of the customer less than 18 20%
+    if (age < 18) {
+        discount = 0.8;
+    // 65 or more 40%
+    } else if (age >= 65) {
+        discount = 0.6;
+    }
+    // fx for calculating the final price
+    final_price = unit_price * distance * discount;
+    // display the final price with 2 decimal numbers
+    console.log('Il prezzo del biglietto è di €' + final_price.toFixed(2));
 }
-// fx for calculating the final price
-final_price = unit_price * distance * discount;
-// display the final price with 2 decimal numbers
-console.log('Il prezzo del biglietto è di €' + final_price.toFixed(2));
+// output for wrong input
+else {
+    alert('ERR 404 - inserisci dei numeri')
+}
