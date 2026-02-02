@@ -53,4 +53,4 @@ if (age < 18) {
 }
 // fx for calculating the final price
 final_price = unit_price * distance * discount
-console.log('€' + final_price);
+console.log('€' + final_price.toFixed(2));
