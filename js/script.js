@@ -51,6 +51,6 @@ if (age < 18) {
 } else if (age >= 65) {
     discount = 0.6;
 }
-
-final_price
-console.log(final_price);
+// fx for calculating the final price
+final_price = unit_price * distance * discount
+console.log('€' + final_price);
