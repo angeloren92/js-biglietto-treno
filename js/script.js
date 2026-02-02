@@ -52,5 +52,6 @@ if (age < 18) {
     discount = 0.6;
 }
 // fx for calculating the final price
-final_price = unit_price * distance * discount
-console.log('€' + final_price.toFixed(2));
+final_price = unit_price * distance * discount;
+// display the final price with 2 decimal numbers
+console.log('Il prezzo del biglietto è di €' + final_price.toFixed(2));
