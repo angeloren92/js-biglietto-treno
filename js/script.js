@@ -45,7 +45,7 @@ let final_price;
 const unit_price = 0.21;
 // check if the input are numbers and not string
 if (!isNaN(age && distance)) {
-    // age check between 0 and 100 and distance check not less than 0
+    // age check between 0 and 100 and distance check not less than 1
     if (age > 0 && age < 100 && distance > 0) {
         // set discount depending by the age of the customer less than 18 20%
         if (age < 18) {
@@ -61,7 +61,7 @@ if (!isNaN(age && distance)) {
     }
     // output for wrong age or distance
     else {
-        alert("ERR 404 - inserisci età compresa da 0 a 99 - Distanza non puo' essere inferiore a 0")
+        alert("ERR 404 - inserisci età compresa da 0 a 99 - Distanza non puo' essere inferiore a 1")
     }
 }
 // output for wrong input type
